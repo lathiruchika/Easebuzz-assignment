@@ -1,0 +1,13 @@
+1️. Sprint velocity is dropping due to flaky automation tests. What will you do?
+Ans:
+First, I would find out which tests are flaky by checking recent failures in the pipeline. I would temporarily disable or isolate those tests so they don’t block the sprint work.
+Then I would fix the issues one by one. Most of the time flakiness happens due to hard waits, test data issues, or environment delays, so I would replace hard waits with proper waits and make test data more stable.
+I would also make sure each flaky test has an owner so it gets fixed and doesn’t keep failing again. If possible, I would move some checks from UI automation to API level to reduce dependency on UI.
+This way automation becomes stable again and sprint progress improves.
+
+2. Two critical bugs were found in production. How will you fix gaps in process and testing?
+Ans
+First, I would understand what exactly went wrong and help validate the fix quickly with the team in production.
+After that, I would check why the issues were missed in QA. Maybe the scenario was not covered, maybe the requirement was not clear, or maybe the test data or environment was different from production.
+Based on that, I would add those missing scenarios to our test cases and automation so the same issue does not happen again. I would also improve requirement review and make sure critical flows are always part of regression testing.
+This helps reduce similar issues in future releases.
